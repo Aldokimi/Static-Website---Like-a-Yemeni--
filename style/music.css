@@ -1,0 +1,133 @@
+
+  /* the header section */
+  header {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/san.jpg);
+    background-size: cover;
+  }
+  
+
+  .welcome{
+    padding-top: 10%;
+    padding-left: 10%;
+    font-size: 6em;
+    font-style: italic;
+    font-weight: bold;
+    color:#d5ffeb;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  
+  /* the end fo the header section */
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .artical{
+    margin-top: 5%;
+    padding: 3%;
+  }
+
+  .artical h1{
+    padding: 1%;
+    font-size: 4.5em;
+    letter-spacing: -1px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .artical p{
+    margin-top: 2%;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    padding: 2%;
+    font-size: 2em; 
+  }
+  .Part{
+    border: 15px groove rgb(94, 68, 13);
+    border-collapse: collapse;
+    margin: 3%;
+  }
+  .vid video{
+    width: 90%;
+  }
+  .vid{
+    margin-left: 10%;
+  }
+  .singersheader{
+    margin: 5%;
+    padding: 3%;
+    font-size: 4.5em;
+    letter-spacing: -1px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .secondPartContainer{
+    display: grid;
+    grid-template-columns: auto auto
+  }
+.imgsingers{
+  margin-top: 3%;
+  margin-left: 3% ;
+  width: 70%;
+}
+.songs ul{
+  height: 50%;
+  margin-top: 20%;
+  font-size: 5em;
+  list-style-type: none;
+	counter-reset: li;
+}
+
+.songs li {
+  
+  background-color: #000000;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  margin: 3%;
+	font-size: 2rem;
+}
+.songs li:before {
+  counter-increment: li;
+  content: counter(li, decimal-leading-zero);
+	color: rgb(182, 182, 182);
+	margin-right: 0.25em;
+}
+.songs a{
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.songs a:hover {
+  text-decoration: underline;
+}
+
+.songs a:active {
+  color: black;
+}
+
+.songs a:visited {
+  color: rgb(216, 72, 216);
+}
+
+@media(max-width: 786px) {
+  .header{
+    height: 10%;
+    width: 50%;
+  }
+  .welcome{
+    font-size: 5em;
+  }
+  .main{
+    grid-template-columns: 1fr;
+  }
+  .secondPartContainer{
+    grid-template-columns: 1fr;
+  }
+}

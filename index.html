@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/index.css">
+	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<title>Like a Yemeni</title>
+</head>
+<body>
+	<header>
+		<nav>
+		   <div class="menu-icon">
+			  <i class="fa fa-bars fa-2x"></i>
+		   </div>
+		   <div class="logo">
+			  LIKE A YEMENI
+		   </div>
+		   <div class="menu">
+			  <ul>
+				<li ><a href="./pages/art.html">Art</a></li>
+				<li ><a href="./pages/music.html">Music</a></li>
+				<li ><a href="./pages/about.html">About</a></li>
+				<li ><a href="./pages/contact.html">Contact</a></li>
+			  </ul>
+		   </div>
+		</nav>
+		<div class="welcome">Welcome to Sana'a</div>
+	</header>
+
+	<main class="main">
+		<article>
+			<h1>THE CONTENT OF THE WEBSITE</h1>
+			<aside>
+				<h2>🌚 The art of Yemen!</h2>
+				<p> I will introduce here the history of the art of Yemen and I will give <br>some examples about the art in the past and the art today.</p>
+			</aside>
+			<aside>
+				<h2>🌚 The music of Yemen!</h2>
+				<p> I will introduce here the history of the music of Yemen and I will give <br> some examples about the music in the past and the music today.</p>
+			</aside>
+		</article>
+
+		<section class="music">
+				<a href="./pages/music.html"><h1>Learn about <br>
+							the music <br>
+							of Yemen! </h1>
+				</a>
+		</section>
+		
+		<section class="Art">
+				<a href="./pages/art.html"><h1>Learn about <br> 
+								the art <br>
+								 of Yemen!</h1>
+								</a>
+		</section>
+	</main>
+	<script>
+		function setbg(color)
+        {
+            document.getElementById("styled").style.background=color
+        }
+		$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      	});
+
+      // Scrolling Effect
+
+      	$(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      	})
+	</script>
+</body>
+</html>

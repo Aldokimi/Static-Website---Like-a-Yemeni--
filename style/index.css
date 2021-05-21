@@ -1,0 +1,134 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bab.jpg);
+  background-size: cover;
+  width:100%; 
+  display:table; 
+  margin-bottom:50px;
+}
+.welcome{
+  padding-top: 30%;
+  padding-left: 10%;
+  font-size: 8em;
+  font-style: italic;
+  font-weight: bold;
+  color:#63fcb2;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*the main seciton */
+ 
+.music {
+  text-align: center;
+  background-image: url("../images/sanaa.jpg");
+  background-size: cover;
+  background-position: top center;
+  margin:5% 15% 5%  15%;
+  height: 55em;
+}
+article{
+  margin:5% 15% 5%  15%;
+  font-size: 3em;
+  padding: 2%;
+}
+
+article h1 {
+  background-color: #d8d2d238;
+  background-size: cover;
+  padding: 5%;
+  font-style: oblique;
+}
+
+article h2 {
+  padding: 2%;
+  font-style: oblique;
+}
+
+
+.music  h1 {
+  background-color: rgba(0, 0, 0, .2);
+  background-size: cover;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 5em;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+  letter-spacing: 10px;
+}
+
+.music  h1:hover{
+  color:#ffffff;
+  background: rgba(119, 114, 114, 0.575);
+  box-shadow: 4px 4px 0 #888;
+}
+.music  h1:active{
+  box-shadow: 0 0 0 #888;
+}
+
+.Art {
+  text-align: center;
+  background-image: url("../images/shebam.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 55em;
+  margin:5% 15% 5%  15%;
+}
+
+.Art  h1 {
+  background-color: rgba(0, 0, 0, .2);
+  background-size: cover;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 5em;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.Art  h1:hover{
+  color:#ffffff;
+  background: rgba(119, 114, 114, 0.575);
+  box-shadow: 4px 4px 0 #888;
+}
+.Art  h1:active{
+  box-shadow: 0 0 0 #888;
+}
+/* end of the main section */
+
+/* break points */
+@media(max-width: 786px) {
+  .header{
+    height: 10%;
+    width: 50%;
+  }
+  .welcome{
+    font-size: 5em;
+  }
+
+  .music {
+    padding: 10px;
+    background-position: center;
+  }
+  article{
+    height: auto;
+    font-size: medium;
+  }
+
+  .Art{
+    padding: 10px;
+    background-position: center;
+  }
+
+  .music  h1 {
+    margin-top: 75%;
+    font-size: 2em;
+    text-decoration:underline;
+    font-weight: bolder;
+  }
+  .Art  h1 {
+    margin-top: 75%;
+    font-size: 2em;
+    text-decoration:underline;
+    font-weight: bolder;
+  }
+
+}

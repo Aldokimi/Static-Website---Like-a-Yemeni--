@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/about.css">
+  <link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<title>About</title>
+</head>
+<body>
+  <div class="wrapper">
+  <header>
+		<nav>
+		   <div class="menu-icon">
+			  <i class="fa fa-bars fa-2x"></i>
+		   </div>
+		   <div class="logo">
+			  LIKE A YEMENI
+		   </div>
+		   <div class="menu">
+			  <ul>
+          <li><a href="../index.html">Main menu</a></li>
+          <li><a href="../pages/music.html">Music</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+          <li><a href="../pages/art.html">Art</a></li>
+        </ul>
+		   </div>
+		</nav>
+		<div class="welcome">Who I am!</div>
+	</header>
+
+
+	<main class="main">
+        <section class="firstSection">
+            <p>
+                Mohammed Nabeil Aldokimi <br>
+                Yemeni student who has been awarded to Stipendum Hungaricum Scholarship in 2019. <br>
+                I was born in Yemen, Taiz in a small village then I moved to Sana'a 
+                (the capital city of Yemen) in 2006 and I continued my education there. <br>
+                Here you can find my education info.
+            </p>
+            <img src="../images/me.png" alt="My picture">
+            <h1></h1>
+            <h1></h1>
+            <table >
+              <caption>My Education info: </caption>
+                <tr>
+                  <th>STUDY PHASE</th>
+                  <th>GRADUATING DATA</th> 
+                </tr>
+                <tr>
+                  <td>Preparatory School</td>
+                  <td>Graduated in 2015 from Alrahma school in
+                    Alsonina Sanaa</td> 
+                </tr>
+                <tr>
+                  <td>High School</td>
+                  <td>Graduated in January 2019 from NewHorizons
+                    institution in level 1B in English</td> 
+                </tr>
+                <tr>
+                  <td>Collage Education</td>
+                  <td>Currently studying at Eötvös Loránd University
+                    faculty of Informatics, Computer Science BcS</td> 
+                </tr>
+              </table>
+        </section>
+        <section class="secondSection">
+            <h1>
+                About the project:
+            </h1>
+            <details>
+              <summary class="sum">Click to know about the projec!</summary>
+              
+              <p>
+                  In this project I want to show people our art, culture, and music. I will give a historical overview
+                  about the art and then music of Yemen the I will give modern examples about those topics and I will talk
+                  about them in detail.
+              </p>
+          </details>
+        </section>
+        
+	</main>
+
+	<footer class="footer">
+			<div class="uni"><img src="../images/elte.jpg" alt="elte"></div>
+			<h2>Eötvös Loránd University <br> Faculaty of Informatics <br> Computer Science</h2>
+			<div class="social-icon">
+				<a href="https://www.facebook.com/profile.php?id=100011490400306" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="media"/></a>				
+				<a href="https://www.instagram.com/mnd_7729/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" alt="media"/></a>			
+				<a href="https://twitter.com/MohammedAldoki2" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" alt="media"/></a>
+				<a href="https://www.linkedin.com/in/mohammed-dokimi-98ba411a5/" target="_blank"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" alt="media"/></a>
+		  </div>
+		  <p>Copyright &copy; 2021 Mohammed Aldokimi. All rights reserved</p>
+	</footer>
+  <script>
+		$(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      	});
+
+      // Scrolling Effect
+
+      	$(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      	})
+	</script></div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+/* the header section */
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/sus.jpg);
+  background-size: cover;
+}
+
+.welcome{
+  padding-top: 30%;
+  padding-left: 10%;
+  font-size: 8em;
+  font-style: italic;
+  font-weight: bold;
+  color:#63fcb2;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* the end fo the header section */
+
+/*the main section */
+
+
+.main p {
+  font-family: cursive;
+  font-size: 2.6em;
+  box-sizing: border-box;
+  text-align: justify;
+  margin: 8% auto;
+  width: 92%;
+  padding: 5px;
+  box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
+  background-color: rgba(41, 41, 41, 1);
+}
+
+.firstSection {
+  display: grid;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  grid-template-columns: 3fr 1fr;
+  box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
+  border: 15px groove rgb(94, 68, 13);
+}
+
+.firstSection img {
+  margin: 50px;
+}
+
+.firstSection caption {
+  text-transform: uppercase;
+  box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
+  color: bisque;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3%;
+}
+
+.firstSection table {
+  background-color: rgba(41, 41, 41, 1);
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  height: 30%;
+  font-size: 2.5em;
+  margin-top: 3%;
+  margin-left: 40%;
+  box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 3%;
+}
+.firstSection td,
+th {
+  width: 4rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.firstSection th {
+  background: rgb(165, 169, 170);
+  border-color: white;
+}
+.secondSection {
+  margin: 100px;
+  border: 15px groove rgb(94, 68, 13);
+}
+.secondSection h1 , sum {
+  text-transform: uppercase;
+  box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+  /* padding-right: -100px; */
+  font-size: 3em;
+  color: bisque;
+  font-weight: bold;
+  text-align: center;
+}
+.sum{
+  margin: 5%;
+  font-size: 2em;
+}
+
+
+
+@media(max-width: 786px) {
+  .header{
+    height: 10%;
+    width: 50%;
+  }
+  .welcome{
+    font-size: 5em;
+  }
+  .main{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .secondPartContainer{
+    grid-template-columns: 1fr;
+  }
+  .firstSection {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 3%;
+  }
+  img{
+    margin: 2%;
+    width: 70%;
+  }
+  .firstSection table {
+    margin: 2%;
+  }
+
+  .secondSection{
+    margin: 3%;
+    width: 100%;
+  }
+
+} 

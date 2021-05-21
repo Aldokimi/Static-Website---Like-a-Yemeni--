@@ -1,0 +1,192 @@
+
+/* the header section */
+.artHeader {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/shebam.jpg);
+  background-size: cover;
+}
+
+.artwelcome{
+  padding-top: 10%;
+  padding-left: 10%;
+  font-size: 8em;
+  font-style: italic;
+  font-weight: bold;
+  color:#384e43;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto;
+}
+.first_artical
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+.first_artical p{
+  padding: 2%;
+  font-size: 3em;
+}
+
+.second_artical{
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 15px groove rgb(94, 68, 13);
+  border-collapse: collapse;
+  display: grid;
+  margin-top: 3%;
+  grid-gap: 2%;
+  grid-template-columns: 1fr 1fr;
+}
+.image1{
+  margin-top: 35%;
+  padding-left: 10%;
+}
+
+.image2{
+  margin-top: 3%;
+  padding-left: 10%;
+}
+.image1 img{
+  width: 90%;
+}
+.image2 img{
+  width: 90%;
+}
+.inartical1{
+  grid-row: 1/3;
+  padding: 3%;
+}
+
+.inartical1 h1 {
+  padding: 1%;
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.inartical1 p{
+  margin-top: 2%;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  padding: 2%;
+  font-size: 2em;
+}
+
+.third_artical{
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 15px groove rgb(94, 68, 13);
+  border-collapse: collapse;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inartical2{
+  padding: 3%;
+  
+}
+.inartical2 h1{
+  padding: 1%;
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.inartical2 p{
+  margin-top: 2%;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  padding: 2%;
+  font-size: 2em; 
+  background-color:rgb(0, 0, 0);
+}
+.image3{
+  padding-left: 3%;
+}
+.image3 img{
+  width: 97%;
+  padding-bottom: 3%;
+}
+
+.image4{
+  padding: 3%;
+  margin-top: 3%;
+  grid-row: 1/3;
+}
+
+.fourth_artical{
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 15px groove rgb(94, 68, 13);
+  border-collapse: collapse;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 7%;
+}
+.fourth_artical video{
+  width: 100%;
+  padding:3%;
+}
+
+@media(max-width: 786px) {
+
+  .header{
+    height: 10%;
+    width: 50%;
+  }
+  .welcome{
+    font-size: 3em;
+    color: #000000;
+  }
+  .main{
+    grid-template-columns: 1fr;
+  }
+  .second_artical{
+    margin: 3%;
+    grid-template-columns: 1fr;
+  }
+  .third_artical{
+    margin: 3%;
+    grid-template-columns: 1fr;
+  }
+  .fourth_artical{
+    margin: 3%;
+    grid-template-columns: 1fr;
+  }
+  .first_artical{
+    margin: 5%;
+  }
+  .first_artical p{
+    font-size: 2em;
+  }
+  .image1  {
+    margin-top: -50px;
+    height: max-content;
+  }
+  .image2{
+    height: 400px;
+  }
+  .image3 img {
+    width: 100%;
+  } 
+  .image4 img{
+    width: 100%;
+  }
+  .inartical1 h1 {
+    font-size: 2em;
+  }
+
+}
